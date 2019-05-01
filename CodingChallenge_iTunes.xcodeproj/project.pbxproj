@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75B75AB32279F44A000DFADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AB22279F44A000DFADC /* AppDelegate.swift */; };
+		75B75AB52279F44A000DFADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AB42279F44A000DFADC /* ViewController.swift */; };
+		75B75AB82279F44A000DFADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B75AB62279F44A000DFADC /* Main.storyboard */; };
+		75B75ABA2279F44D000DFADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B75AB92279F44D000DFADC /* Assets.xcassets */; };
+		75B75ABD2279F44D000DFADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B75ABB2279F44D000DFADC /* LaunchScreen.storyboard */; };
+		75B75ACB2279F5C8000DFADC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75ACA2279F5C8000DFADC /* Model.swift */; };
+		75B75ACD2279F5E1000DFADC /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75ACC2279F5E1000DFADC /* BaseTableViewCell.swift */; };
+		75B75ACF2279F663000DFADC /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75ACE2279F663000DFADC /* BaseTableViewController.swift */; };
+		75B75AD12279F684000DFADC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD02279F684000DFADC /* TabBarController.swift */; };
+		75B75AD32279F7FC000DFADC /* MacroClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD22279F7FC000DFADC /* MacroClass.swift */; };
+		B06B20BB11714FC2172C1DB7 /* Pods_CodingChallenge_iTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9E21937E4C960536E822CC /* Pods_CodingChallenge_iTunes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D9E21937E4C960536E822CC /* Pods_CodingChallenge_iTunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingChallenge_iTunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B75AAF2279F44A000DFADC /* CodingChallenge_iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge_iTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B75AB22279F44A000DFADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75B75AB42279F44A000DFADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75B75AB72279F44A000DFADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75B75AB92279F44D000DFADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75B75ABC2279F44D000DFADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75B75ABE2279F44D000DFADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B75ACA2279F5C8000DFADC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		75B75ACC2279F5E1000DFADC /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		75B75ACE2279F663000DFADC /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		75B75AD02279F684000DFADC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		75B75AD22279F7FC000DFADC /* MacroClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroClass.swift; sourceTree = "<group>"; };
+		98FB181E39A7543DE48F32FE /* Pods-CodingChallenge_iTunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallenge_iTunes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallenge_iTunes/Pods-CodingChallenge_iTunes.release.xcconfig"; sourceTree = "<group>"; };
+		B442DAE46D6CCAC2B1DFE8C8 /* Pods-CodingChallenge_iTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallenge_iTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallenge_iTunes/Pods-CodingChallenge_iTunes.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75B75AAC2279F44A000DFADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06B20BB11714FC2172C1DB7 /* Pods_CodingChallenge_iTunes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36D51E669A12BF53419185BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B442DAE46D6CCAC2B1DFE8C8 /* Pods-CodingChallenge_iTunes.debug.xcconfig */,
+				98FB181E39A7543DE48F32FE /* Pods-CodingChallenge_iTunes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5169C15F86B9F6E9FCBE5985 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D9E21937E4C960536E822CC /* Pods_CodingChallenge_iTunes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75B75AA62279F44A000DFADC = {
+			isa = PBXGroup;
+			children = (
+				75B75AB12279F44A000DFADC /* CodingChallenge_iTunes */,
+				75B75AB02279F44A000DFADC /* Products */,
+				36D51E669A12BF53419185BE /* Pods */,
+				5169C15F86B9F6E9FCBE5985 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75B75AB02279F44A000DFADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B75AAF2279F44A000DFADC /* CodingChallenge_iTunes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B75AB12279F44A000DFADC /* CodingChallenge_iTunes */ = {
+			isa = PBXGroup;
+			children = (
+				75B75AC72279F4E1000DFADC /* Model */,
+				75B75AC62279F4DA000DFADC /* View */,
+				75B75AC42279F485000DFADC /* Controller */,
+				75B75AB22279F44A000DFADC /* AppDelegate.swift */,
+				75B75AB42279F44A000DFADC /* ViewController.swift */,
+				75B75AB62279F44A000DFADC /* Main.storyboard */,
+				75B75AB92279F44D000DFADC /* Assets.xcassets */,
+				75B75ABB2279F44D000DFADC /* LaunchScreen.storyboard */,
+				75B75ABE2279F44D000DFADC /* Info.plist */,
+				75B75AD22279F7FC000DFADC /* MacroClass.swift */,
+			);
+			path = CodingChallenge_iTunes;
+			sourceTree = "<group>";
+		};
+		75B75AC42279F485000DFADC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75B75AC52279F491000DFADC /* ChildrenController */,
+				75B75AD02279F684000DFADC /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75B75AC52279F491000DFADC /* ChildrenController */ = {
+			isa = PBXGroup;
+			children = (
+				75B75ACE2279F663000DFADC /* BaseTableViewController.swift */,
+			);
+			path = ChildrenController;
+			sourceTree = "<group>";
+		};
+		75B75AC62279F4DA000DFADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75B75ACC2279F5E1000DFADC /* BaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75B75AC72279F4E1000DFADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75B75ACA2279F5C8000DFADC /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75B75AAE2279F44A000DFADC /* CodingChallenge_iTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B75AC12279F44D000DFADC /* Build configuration list for PBXNativeTarget "CodingChallenge_iTunes" */;
+			buildPhases = (
+				CC273BA7819E6AF06A9F6B6E /* [CP] Check Pods Manifest.lock */,
+				75B75AAB2279F44A000DFADC /* Sources */,
+				75B75AAC2279F44A000DFADC /* Frameworks */,
+				75B75AAD2279F44A000DFADC /* Resources */,
+				D5F437DB85945A24EE8C8919 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodingChallenge_iTunes;
+			productName = CodingChallenge_iTunes;
+			productReference = 75B75AAF2279F44A000DFADC /* CodingChallenge_iTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75B75AA72279F44A000DFADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yan feng";
+				TargetAttributes = {
+					75B75AAE2279F44A000DFADC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 75B75AAA2279F44A000DFADC /* Build configuration list for PBXProject "CodingChallenge_iTunes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75B75AA62279F44A000DFADC;
+			productRefGroup = 75B75AB02279F44A000DFADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75B75AAE2279F44A000DFADC /* CodingChallenge_iTunes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75B75AAD2279F44A000DFADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B75ABD2279F44D000DFADC /* LaunchScreen.storyboard in Resources */,
+				75B75ABA2279F44D000DFADC /* Assets.xcassets in Resources */,
+				75B75AB82279F44A000DFADC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC273BA7819E6AF06A9F6B6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodingChallenge_iTunes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F437DB85945A24EE8C8919 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodingChallenge_iTunes/Pods-CodingChallenge_iTunes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodingChallenge_iTunes/Pods-CodingChallenge_iTunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75B75AAB2279F44A000DFADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B75ACD2279F5E1000DFADC /* BaseTableViewCell.swift in Sources */,
+				75B75ACB2279F5C8000DFADC /* Model.swift in Sources */,
+				75B75ACF2279F663000DFADC /* BaseTableViewController.swift in Sources */,
+				75B75AD12279F684000DFADC /* TabBarController.swift in Sources */,
+				75B75AB52279F44A000DFADC /* ViewController.swift in Sources */,
+				75B75AB32279F44A000DFADC /* AppDelegate.swift in Sources */,
+				75B75AD32279F7FC000DFADC /* MacroClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75B75AB62279F44A000DFADC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B75AB72279F44A000DFADC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75B75ABB2279F44D000DFADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B75ABC2279F44D000DFADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75B75ABF2279F44D000DFADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75B75AC02279F44D000DFADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75B75AC22279F44D000DFADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B442DAE46D6CCAC2B1DFE8C8 /* Pods-CodingChallenge_iTunes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodingChallenge_iTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YanFeng.CodingChallenge-iTunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75B75AC32279F44D000DFADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FB181E39A7543DE48F32FE /* Pods-CodingChallenge_iTunes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodingChallenge_iTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YanFeng.CodingChallenge-iTunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75B75AAA2279F44A000DFADC /* Build configuration list for PBXProject "CodingChallenge_iTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B75ABF2279F44D000DFADC /* Debug */,
+				75B75AC02279F44D000DFADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B75AC12279F44D000DFADC /* Build configuration list for PBXNativeTarget "CodingChallenge_iTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B75AC22279F44D000DFADC /* Debug */,
+				75B75AC32279F44D000DFADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75B75AA72279F44A000DFADC /* Project object */;
+}
