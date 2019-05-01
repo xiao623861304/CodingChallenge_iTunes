@@ -26,7 +26,7 @@ class MusicTableViewController: BaseTableViewController {
     override func getData() {
         Model.getData(url: musicUrl) { (arr) in
             self.array = arr
-            print(self.array)
+//            print(self.array)
             self.tableView.reloadData()
         }
     }
@@ -49,12 +49,12 @@ class MusicTableViewController: BaseTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: musicCellId, for: indexPath) as! MusicTableViewCell
-//        cell.showData(model: array[indexPath.row])
+        cell.showCellData(model: array[indexPath.row])
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 90
     }
 
 

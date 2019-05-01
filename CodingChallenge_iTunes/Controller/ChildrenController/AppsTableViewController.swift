@@ -46,10 +46,14 @@ class AppsTableViewController: BaseTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: appsCellId, for: indexPath) as! AppsTableViewCell
 
+        cell.showCellData(model: array[indexPath.row])
         // Configure the cell...
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
 
     /*
     // Override to support conditional editing of the table view.
