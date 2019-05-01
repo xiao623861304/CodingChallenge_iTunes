@@ -18,7 +18,16 @@ class TabBarController: UITabBarController {
     
 
     func creatSubViewControllers(){
+        let apps  = AppsTableViewController ()
+        let item1 : UITabBarItem = UITabBarItem (title: "App", image: UIImage(named: "apps"), selectedImage: nil)
+        apps.tabBarItem = item1
         
+        let music = MusicTableViewController()
+        let item2 : UITabBarItem = UITabBarItem (title: "Music", image: UIImage(named: "music"), selectedImage: nil)
+        music.tabBarItem = item2
+        
+        let tabArray = [apps,music]
+        self.viewControllers = tabArray
     }
     /*
     // MARK: - Navigation

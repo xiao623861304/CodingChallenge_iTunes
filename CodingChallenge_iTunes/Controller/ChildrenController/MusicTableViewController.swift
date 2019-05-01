@@ -1,5 +1,5 @@
 //
-//  BaseTableViewController.swift
+//  MusicTableViewController.swift
 //  CodingChallenge_iTunes
 //
 //  Created by yan feng on 2019/5/1.
@@ -8,48 +8,55 @@
 
 import UIKit
 
-class BaseTableViewController: UITableViewController {
+class MusicTableViewController: BaseTableViewController {
 
-    var array:[Model] = [Model]()
+    
+     let musicCellId:String = "musicCell"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        registerCell()
-        getData()
     }
-
-    func getData() {
-        
+    
+    override func getData() {
+        Model.getData(url: musicUrl) { (arr) in
+            self.array = arr
+            print(self.array)
+            self.tableView.reloadData()
+        }
     }
-    func registerCell(){
-        
+    override func registerCell() {
+        tableView.register(MusicTableViewCell.self, forCellReuseIdentifier: musicCellId)
     }
+    
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
+    
+    //    override func numberOfSections(in tableView: UITableView) -> Int {
+    //        // #warning Incomplete implementation, return the number of sections
+    //        return self.array.count
+    //    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.array.count
     }
-
-    /*
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: musicCellId, for: indexPath) as! MusicTableViewCell
+//        cell.showData(model: array[indexPath.row])
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

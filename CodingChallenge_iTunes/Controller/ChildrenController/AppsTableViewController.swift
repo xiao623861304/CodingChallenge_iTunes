@@ -1,5 +1,5 @@
 //
-//  BaseTableViewController.swift
+//  AppsTableViewController.swift
 //  CodingChallenge_iTunes
 //
 //  Created by yan feng on 2019/5/1.
@@ -8,48 +8,48 @@
 
 import UIKit
 
-class BaseTableViewController: UITableViewController {
+class AppsTableViewController: BaseTableViewController {
 
-    var array:[Model] = [Model]()
+    let appsCellId:String = "appsCell"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.separatorStyle = .none
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        registerCell()
-        getData()
     }
 
-    func getData() {
-        
+    override func getData() {
+        Model.getData(url: appUrl) { (arr) in
+            self.array = arr
+            self.tableView.reloadData()
+        }
     }
-    func registerCell(){
-        
+    override func registerCell() {
+        tableView.register(AppsTableViewCell.self, forCellReuseIdentifier: appsCellId)
     }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.array.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: appsCellId, for: indexPath) as! AppsTableViewCell
 
         // Configure the cell...
-
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

@@ -17,6 +17,10 @@
 		75B75ACF2279F663000DFADC /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75ACE2279F663000DFADC /* BaseTableViewController.swift */; };
 		75B75AD12279F684000DFADC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD02279F684000DFADC /* TabBarController.swift */; };
 		75B75AD32279F7FC000DFADC /* MacroClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD22279F7FC000DFADC /* MacroClass.swift */; };
+		75B75AD52279FF05000DFADC /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD42279FF05000DFADC /* MusicTableViewController.swift */; };
+		75B75AD72279FF11000DFADC /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD62279FF11000DFADC /* AppsTableViewController.swift */; };
+		75B75AD92279FF5D000DFADC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75AD82279FF5D000DFADC /* MusicTableViewCell.swift */; };
+		75B75ADB2279FF65000DFADC /* AppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B75ADA2279FF65000DFADC /* AppsTableViewCell.swift */; };
 		B06B20BB11714FC2172C1DB7 /* Pods_CodingChallenge_iTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9E21937E4C960536E822CC /* Pods_CodingChallenge_iTunes.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		75B75ACE2279F663000DFADC /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		75B75AD02279F684000DFADC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		75B75AD22279F7FC000DFADC /* MacroClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroClass.swift; sourceTree = "<group>"; };
+		75B75AD42279FF05000DFADC /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		75B75AD62279FF11000DFADC /* AppsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTableViewController.swift; sourceTree = "<group>"; };
+		75B75AD82279FF5D000DFADC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		75B75ADA2279FF65000DFADC /* AppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTableViewCell.swift; sourceTree = "<group>"; };
 		98FB181E39A7543DE48F32FE /* Pods-CodingChallenge_iTunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallenge_iTunes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallenge_iTunes/Pods-CodingChallenge_iTunes.release.xcconfig"; sourceTree = "<group>"; };
 		B442DAE46D6CCAC2B1DFE8C8 /* Pods-CodingChallenge_iTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallenge_iTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallenge_iTunes/Pods-CodingChallenge_iTunes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				75B75ACE2279F663000DFADC /* BaseTableViewController.swift */,
+				75B75AD42279FF05000DFADC /* MusicTableViewController.swift */,
+				75B75AD62279FF11000DFADC /* AppsTableViewController.swift */,
 			);
 			path = ChildrenController;
 			sourceTree = "<group>";
@@ -123,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				75B75ACC2279F5E1000DFADC /* BaseTableViewCell.swift */,
+				75B75AD82279FF5D000DFADC /* MusicTableViewCell.swift */,
+				75B75ADA2279FF65000DFADC /* AppsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,8 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B75ACD2279F5E1000DFADC /* BaseTableViewCell.swift in Sources */,
+				75B75AD72279FF11000DFADC /* AppsTableViewController.swift in Sources */,
+				75B75AD52279FF05000DFADC /* MusicTableViewController.swift in Sources */,
 				75B75ACB2279F5C8000DFADC /* Model.swift in Sources */,
 				75B75ACF2279F663000DFADC /* BaseTableViewController.swift in Sources */,
+				75B75AD92279FF5D000DFADC /* MusicTableViewCell.swift in Sources */,
+				75B75ADB2279FF65000DFADC /* AppsTableViewCell.swift in Sources */,
 				75B75AD12279F684000DFADC /* TabBarController.swift in Sources */,
 				75B75AB52279F44A000DFADC /* ViewController.swift in Sources */,
 				75B75AB32279F44A000DFADC /* AppDelegate.swift in Sources */,

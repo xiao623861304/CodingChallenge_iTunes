@@ -10,6 +10,9 @@ import UIKit
 
 class BaseTableViewCell: UITableViewCell {
 
+    let title = UILabel()
+    let iconImage = UIImageView()
+    let typeLabel = UILabel()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
